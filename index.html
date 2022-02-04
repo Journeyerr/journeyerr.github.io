@@ -151,8 +151,25 @@
                   </div>
                   <div class="col-sm-5 col-sm-offset-2">
                      <div class="couple-story">
-                        <p class="couple-story text-left"> 20xx.xx.xx</p>
+                        <p class="couple-story text-left"> 2022.02.03</p>
+                        <p>这是跟你在一起后，最难过的夜晚。 即使自己什么都没做，谁也都没有错，就是感觉自己特别难过。去看了我们的照片，一想到以后身边的人如果不是你，眼泪就往下掉。</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="row story-row mt-100 mb-100">
+                  <div class="circle-dashed timeline bg">
+                     <div class="round-circle bg before ">
+                        <i class="icon-heart"></i>
+                     </div>
+                  </div>
+                  <div class="col-sm-5 ">
+                     <div class="couple-story">
+                        <p class="couple-story text-left mb-10"> 20xx.xx.xx</p>
                         <p>我们的故事才刚开始，往后余生，谢谢有你。</p>
+                     </div>
+                  </div>
+                  <div class="col-sm-5 col-sm-offset-2">
+                     <div class="couple-story">
                      </div>
                   </div>
                </div>
@@ -171,7 +188,7 @@
                   <div class="col-sm-12 text-center">
                      <div class="block-content front-p">
                         <h2 class="typo">First Meeting</h2>
-                        <span id="elapseClock" class="text-white" style="font-size: 45px;font-weight: 300;">days <span class="digit">20</span> hours <span class="digit">14</span> minutes 
+                        <span id="elapseClock" class="text-white" style="font-size: 45px;font-weight: 300;">days <span class="digit">20</span> hours <span class="digit">14</span> minutes  <span class="digit">00</span> seconds</span>
                      </div>
                   </div>
                </div>
@@ -329,7 +346,9 @@
    			if(b<10){b="0"+b}f=f%3600;var d=Math.floor(f/60);
    			if(d<10){d="0"+d}f=f%60;
    			if(f<10){f="0"+f}
-   			var a='<span class="digit">'+g+'</span> days <span class="digit">'+b+'</span> hours <span class="digit">'+d+'</span> minutes <span class="digit">';$("#elapseClock").html(a)};
+   			var a='<span class="digit">'+g+'</span> days <span class="digit">'+b+'</span> hours <span class="digit">'+d+'</span> minutes <span class="digit">'+f+"</span> seconds";
+         $("#elapseClock").html(a)
+      };
    </script>
 
    <script type="text/javascript">
